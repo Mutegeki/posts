@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Welcome</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='bootstrap.min.css') }}" />
     <script src="main.js"></script>
@@ -12,7 +12,7 @@
     <div class="container">
         <h1>Welcome to Flask</h1>
         <br>
-        <p>Click <a href="/">here</a>to go home </p>
+        <p>Click <a href="/logout">here</a> to logout </p>
         {% for message in get_flashed_messages() %}
             {{ message }}
         {% endfor %}
